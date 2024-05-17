@@ -22,14 +22,14 @@ body {
         section#main {
             float: right;
             width: 70%;
-            height: 220px;
+            height: 260px;
             background-color: #f0b994 ;
         }
 
         nav {
             float: left;
             width: 30%;
-            height: 220px;
+            height: 260px;
             background-color: #bacec1;
         }
 
