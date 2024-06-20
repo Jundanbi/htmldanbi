@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Info - Luxury Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.415);
+
+            
+        }
+        header .logo {
+            text-align: center;
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: medium;
+        }
+        .login-btn {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            padding: 50px;
+            background-color: #222;
+        }
+        .hotel-info-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .hotel-info-content .text, .hotel-info-content .image {
+            flex: 1;
+            min-width: 300px;
+        }
+        .hotel-info-content .image img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color:  #2a2a2a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            flex-wrap: wrap;
+            width: 97.5%;
+        }
+        .footer .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+        .footer .column h3 {
+            margin-top: 0;
+        }
+        .footer .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-bottom {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+            width: 98.91%;
+
+        }
+        .back-link {
+            display: block;
+            margin: 20px 0;
+            color: white;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .column2 {
+            width: 40%;
+            height: 40%;
+        }
+
+        .login-btn {
+            background-color: #bda27e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover {
+            background-color: #b5936b;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">BI hotel</a></h1>
+        </div>
+        <nav>
+            <a href="hotel_info.html">호텔 소개</a>
+            <a href="rooms.html">룸</a>
+            <a href="facilities.html">시설</a>
+            
+        </nav>
+        <button class="login-btn">Login</button>
+    </header>
+    
+    
+
+    <div class="section" id="hotel-info">
+        <h2>Hotel Info</h2>
+        <div class="hotel-info-content">
+            <div class="text">
+                <p>호텔로고야에 오신 것을 환영합니다</p>
+                <p>도심의 분주함 속에서도 평온함을 찾고 싶다면, 당신을 위한 완벽한 휴식처가 있습니다.</p> 
+                <p>호텔로고야는 고급스러움과 편안함을 한데 모아 여러분께 최상의 경험을 선사합니다.</p>
+                <p>호텔로고야 에서는 도시 중심부에 위치하여 주요 명소와 쇼핑, 식사를 쉽게 즐길 수 있습니다.</p>
+                <p>호텔로고야는 여러분의 모든 필요와 기대를 충족시켜드리기 위해 항상 최선을 다합니다.</p>
+                <p>지금 바로 예약하시고 잊지 못할 특별한 경험을 만나보세요.</p>
+            </div>
+            <div class="image">
+                <img src="hotel.jpg" alt="Hotel Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+            <h3>About Us</h3>
+            <p>호텔로고야는 고급스러움과 편안함을 최우선으로 생각하는 도심 속의 오아시스입니다.</p>
+            <p> 저희 호텔은 최고의 위치, 럭셔리한 객실, 세계적 수준의 서비스를 통해 고객 한 분 한 분께 특별한 경험을 선사합니다.</p>
+            <p>여행객부터 비즈니스 방문객까지, 모든 고객이 편안하고 만족스러운 시간을 보낼 수 있도록 최선을 다하고 있습니다.</p>
+            <p>호텔로고야에서 진정한 환대와 안락함을 느껴보세요.</p>
+        </div>
+        <div class="column2">
+            <h3>(주)호텔로고</h3>
+            <p>Email: info@luxuryhotel.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Address: 123 Luxury St, City, Country</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Luxury Hotel. All rights reserved. | Hotel Location | Business Registration Number</p>
+    </div>
+
+    
+</body>
+</html>

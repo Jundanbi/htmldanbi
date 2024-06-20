@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Luxury Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.415);
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .login-btn {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            padding: 50px;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        .login-form {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #bda27e;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .login-form button:hover {
+            background-color: #b5936b;
+        }
+
+        .login-btn {
+            background-color: #bda27e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover {
+            background-color: #b5936b;
+        }
+
+
+
+        .footer {
+            background-color:  #2a2a2a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            flex-wrap: wrap;
+            width: 97.5%;
+        }
+        .footer .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+        .footer .column h3 {
+            margin-top: 0;
+        }
+        .footer .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-bottom {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+            width: 98.91%;
+
+        }
+
+        .column {
+            width: 50%;
+            height: 50%;
+        }
+        .column2 {
+            width: 40%;
+            height: 40%;
+        }
+
+
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">BI HOTEL</a></h1>
+        </div>
+        <nav>
+            <a href="hotel_info.html">호텔소개</a>
+            <a href="rooms.html">룸</a>
+            <a href="facilities.html">시설</a>
+            
+        </nav>
+        <a href="login.html"><button class="login-btn">Login</button> </a>
+    </header>
+
+
+    <div class="section">
+        <form class="login-form" action="dashboard.html" method="post" onsubmit="return validateForm()">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "" || password == "") {
+                alert("Both fields must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+<div class="footer">
+    <div class="column">
+        <h3>BI hotel</h3>
+        <p>호텔로고야는 고급스러움과 편안함을 최우선으로 생각하는 도심 속의 오아시스입니다.</p>
+        <p> 저희 호텔은 최고의 위치, 럭셔리한 객실, 세계적 수준의 서비스를 통해 고객 한 분 한 분께 특별한 경험을 선사합니다.</p>
+        <p>여행객부터 비즈니스 방문객까지, 모든 고객이 편안하고 만족스러운 시간을 보낼 수 있도록 최선을 다하고 있습니다.</p>
+        <p>호텔로고야에서 진정한 환대와 안락함을 느껴보세요.</p>
+    </div>
+    <div class="column2">
+        <h3>(주)BI hotel</h3>
+        <p>Email: info@luxuryhotel.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 Luxury St, City, Country</p>
+    </div>
+</div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Luxury Hotel. All rights reserved. | Hotel Location | Business Registration Number</p>
+    </div>
+</body>
+</html>
